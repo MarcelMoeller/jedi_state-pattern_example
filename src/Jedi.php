@@ -26,4 +26,9 @@ class Jedi
     public function attack() {
         $this->state->attack();
     }
+
+    public function showState() {
+        echo "<strong>State:</strong> ";
+        $this->state->showState();
+    }
 }

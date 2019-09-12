@@ -18,4 +18,9 @@ class FullEnergyJediState extends JediState {
     {
         echo "There is no need for the jedi to rest.<br/>";
     }
+
+    public function showState()
+    {
+        echo 'The jedi has full energy.<br/>';
+    }
 }

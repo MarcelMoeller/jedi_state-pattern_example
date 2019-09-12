@@ -21,4 +21,9 @@ class PartialEnergyJediState extends JediState
         echo "The jedi rest and gains alot of energy back.<br/>";
         $this->jedi->setState(new FullEnergyJediState($this->jedi));
     }
+
+    public function showState()
+    {
+        echo "The jedi has only half of his energy left.<br/>";
+    }
 }

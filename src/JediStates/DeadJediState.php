@@ -18,4 +18,9 @@ class DeadJediState extends JediState
     {
         echo "Cant rest because the Jedi is dead.<br/>";
     }
+
+    public function showState()
+    {
+        echo "The jedi is dead.<br/>";
+    }
 }

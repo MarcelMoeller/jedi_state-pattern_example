@@ -10,6 +10,8 @@ abstract class JediState {
         $this->jedi = $jedi;
     }
 
+    abstract public function showState();
+
     abstract public function run();
 
     abstract public function attack();

@@ -20,4 +20,9 @@ class NoEnergyJediState extends JediState
         echo "The jedi rests and partialy restores his energy.<br/>";
         $this->jedi->setState(new PartialEnergyJediState($this->jedi));
     }
+
+    public function showState()
+    {
+        echo "The jedi has no energy left.<br/>";
+    }
 }
