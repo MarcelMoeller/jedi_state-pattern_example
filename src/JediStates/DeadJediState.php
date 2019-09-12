@@ -1,7 +1,7 @@
 <?php
 
 
-class DeadJediState implements JediState
+class DeadJediState extends JediState
 {
 
     public function run()
