@@ -5,13 +5,13 @@ class FullEnergyJediState extends JediState {
     public function run()
     {
         echo "The jedi runs with full speed.";
-        $this->jedi->setState(new PartialEnergyJediState());
+        $this->jedi->setState(new PartialEnergyJediState($this->jedi));
     }
 
     public function attack()
     {
         echo "The jedi attacks with full power.";
-        $this->jedi->setState(new PartialEnergyJediState());
+        $this->jedi->setState(new PartialEnergyJediState($this->jedi));
     }
 
     public function rest()
