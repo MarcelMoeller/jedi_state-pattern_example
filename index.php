@@ -17,19 +17,21 @@ if (isset($_SESSION["jedi"]) && !empty($_SESSION["jedi"])) {
 <div style="display: flex;">
     <div style="width: 30%;">
         <?php
-        switch ($_GET["action"]) {
-            case "1":
-                $jedi->run();
-                break;
-            case "2":
-                $jedi->rest();
-                break;
-            case "3":
-                $jedi->attack();
-                break;
-            case "4":
-                $jedi = new Jedi();
-                break;
+        if(isset($_GET["action"]) && !empty($_GET["action"])) {
+            switch ($_GET["action"]) {
+                case "1":
+                    $jedi->run();
+                    break;
+                case "2":
+                    $jedi->rest();
+                    break;
+                case "3":
+                    $jedi->attack();
+                    break;
+                case "4":
+                    $jedi = new Jedi();
+                    break;
+            }
         }
         $jedi->showState();
         ?>
